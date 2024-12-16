@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="website.css">
+</head>
+
+<body>
+<header>
+  <h1 id="typing"></h1>
+
+  <script>
+    const nameToType = "Sabrina Allan";
+    const typedText = document.getElementById("typing");
+    const cursor = document.getElementById("cursor");
+
+    let index = 0;
+
+    function typeEffect() {
+     if (index < nameToType.length) {
+     
+       typedText.textContent += nameToType.charAt(index);
+       index++;
+       setTimeout(typeEffect, 150); 
+     } else {
+    
+       cursor.style.animation = "blink 0.7s step-start infinite";
+     }
+    }
+    window.onload = () => {
+      typeEffect();
+    };
+  </script>
+  
+    <h2>First Year Engineering Science student at Simon Fraser University</h2>
+	  
+	  <div class="socials-icons">
+	    <a href="https://github.com/sabrinaa3" target="_blank">
+		  <i class="fa-brands fa-github"></i>
+		</a>
+		<a href="https://www.linkedin.com/in/sabrina-allan-367876327" target="_blank">
+		  <i class="fa-brands fa-linkedin"></i>
+		</a>
+      </div>
+	  
+	  <div class="resume-button">
+        <button onclick="window.location.href='your-resume-file.pdf';">Resume</button>
+      </div>
+	
+	    <nav class="top-nav">
+	      <ul>
+	        <li><a href="about.html">About</a></li>
+		    <li><a href="skills.html">Skills</a></li>
+		    <li><a href="experience.html">Experience</a></li>
+		    <li><a href="projects.html">Projects</a></li>
+		    <li><a href="contactme.html">Contact Me</a></li>
+	       </ul>
+	    </nav>
+</header>
+</body> 
+</html>

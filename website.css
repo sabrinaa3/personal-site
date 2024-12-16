@@ -1,0 +1,109 @@
+body {
+	font-family:'Fira Code', monospace;
+	background-color:#FFF5F8; 
+	background-image:radial-gradient(#FFD6E7 1px, transparent 1px);
+    background-size:20px 20px;
+}
+header {
+    text-align:center;
+}
+#main {
+  background-image: url('csit-sa-hero-1200x400.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; 
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.top-nav {
+  position: fixed;   
+  top: 10px;          
+  left: 10px;        
+  padding: 10px;      
+  z-index: 1000;      
+}
+.top-nav ul {
+  display: flex;
+  gap: 20px;
+}
+.top-nav ul li {
+  display: inline-block;
+}
+.top-nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 10px;
+  z-index: 1000;
+  width: 100%; 
+}
+.bottom-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.bottom-nav ul li {
+  display: inline-block;
+}
+.bottom-nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+#typing {
+   font-size: 2rem;
+   display: inline-block;
+   border-right: 2px solid black; 
+   white-space: nowrap;
+   overflow: hidden;
+   animation: blink 1s step-start infinite; 
+}
+@keyframes blink {
+  50%{
+    border-color: transparent;
+  }
+}
+.socials-icons {
+  display:flex;
+  color: #CCCCFF;
+  justify-content: center;
+  gap:20px;
+ }
+.resume-button {
+  text-align: center;
+  margin-top: 20px; 
+}
+button {
+  background-color: transparent;
+  color: #CCCCFF;
+  border: 2px solid #CCCCFF;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+button:hover {
+  background-color: #CCCCFF;
+  color: white;
+  transform: scale(1.1);
+}
+section {
+  text-align:center;
+}
+footer {
+   text-align:center;
+}
