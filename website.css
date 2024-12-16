@@ -77,10 +77,20 @@ ul {
 }
 .socials-icons {
   display:flex;
-  color: #CCCCFF;
   justify-content: center;
   gap:20px;
  }
+ .socials-icons a i {
+  color: #CCCCFF; 
+  font-size: 20px; 
+  transition: color 0.3s, transform 0.3s; 
+}
+.socials-icons a i:hover {
+  font-size:18px;
+  color: white;
+  color: white;
+  transform: scale(1.1); 
+}
 .resume-button {
   text-align: center;
   margin-top: 20px; 
