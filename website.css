@@ -87,7 +87,6 @@ ul {
 }
 .socials-icons a i:hover {
   font-size:18px;
-  color: white;
   color: #CCCCFF;
   transform: scale(1.1); 
 }
