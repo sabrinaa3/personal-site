@@ -1,4 +1,4 @@
-document.querySelector('.hamburger-menu i').addEventListener('click', function() {
-  const nav = document.querySelector('.dropdown-nav');
-  nav.classList.toggle('visible');
-});
+function toggleMenu() {
+  const menu = document.querySelector('.dropdown-nav');
+  menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+}
