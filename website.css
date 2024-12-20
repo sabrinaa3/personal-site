@@ -6,9 +6,19 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+section {
+  transition: opacity 0.5s ease-in-out;
+}
+
+#about {
+  display: block;
+}
+
 header {
     text-align:center;
 }
+
 #main {
   background-image: url('csit-sa-hero-1200x400.jpg');
   background-size: cover;
@@ -16,52 +26,57 @@ header {
   background-repeat: no-repeat;
   height: 100vh; 
 }
+
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-.top-nav {
-  position: fixed;   
-  top: 10px;          
-  left: 10px;        
-  padding: 10px;      
-  z-index: 1000;      
-}
-.top-nav ul {
-  display: flex;
-  gap: 20px;
-}
-.top-nav ul li {
-  display: inline-block;
-}
-.top-nav ul li a {
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-}
-.bottom-nav {
+
+.hamburger-menu {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
-  padding: 10px;
+  top: 10px;
+  left: 10px;
   z-index: 1000;
-  width: 100%; 
+  cursor: pointer;
 }
-.bottom-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-.bottom-nav ul li {
-  display: inline-block;
-}
-.bottom-nav ul li a {
-  text-decoration: none;
-  font-size: 18px;
+
+.hamburger-menu i {
+  font-size: 24px;
   color: black;
 }
+
+.dropdown-nav {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.dropdown-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-nav ul li {
+  margin: 10px 0;
+}
+
+.dropdown-nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+}
+
+.dropdown-nav ul li a:hover {
+  color: #CCCCFF;
+}
+
 #typing {
    font-size: 2rem;
    display: inline-block;
@@ -75,25 +90,31 @@ ul {
     border-color: transparent;
   }
 }
+
+
 .socials-icons {
   display:flex;
   justify-content: center;
   gap:20px;
  }
+ 
  .socials-icons a i {
   color: #CCCCFF; 
   font-size: 20px; 
   transition: color 0.3s, transform 0.3s; 
 }
+
 .socials-icons a i:hover {
   font-size:18px;
   color: #CCCCFF;
   transform: scale(1.1); 
 }
+
 .resume-button {
   text-align: center;
   margin-top: 20px; 
 }
+
 button {
   background-color: transparent;
   color: #CCCCFF;
@@ -107,14 +128,17 @@ button {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
+
 button:hover {
   background-color: #CCCCFF;
   color: white;
   transform: scale(1.1);
 }
+
 section {
   text-align:center;
 }
+
 footer {
    text-align:center;
 }
