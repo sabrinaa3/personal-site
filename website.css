@@ -48,7 +48,7 @@ ul {
 
 .dropdown-nav {
   display: none; /* Hidden by default */
-  position: fixed;
+  position: absolute;
   top: 40px;
   left: 0;
   background-color: white;
