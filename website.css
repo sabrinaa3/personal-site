@@ -58,7 +58,7 @@ ul {
 
 .hamburger-menu i {
   font-size: 24px;
-  color: black;
+  color: #CCCCFF;
 }
 
 .dropdown-nav {
@@ -129,7 +129,27 @@ button {
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
+.bottom-nav i a:hover {
+  font-size:18px;
+  color: #CCCCFF;
+  transform: scale(1.1);
+}
+
+.bottom-nav {
+	text-align: center;
+}
+
 button:hover {
+  background-color: #CCCCFF;
+  color: white;
+  transform: scale(1.1);
+}
+
+.button-nav {
+	
+}
+
+bottom-nav:hover {
   background-color: #CCCCFF;
   color: white;
   transform: scale(1.1);
