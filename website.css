@@ -7,6 +7,21 @@ body {
   flex-direction: column;
 }
 
+#typing {
+   font-size: 2rem;
+   display: inline-block;
+   border-right: 2px solid black; 
+   white-space: nowrap;
+   overflow: hidden;
+   animation: blink 1s step-start infinite; 
+}
+
+@keyframes blink {
+  50%{
+    border-color: transparent;
+  }
+}
+
 section {
   transition: opacity 0.5s ease-in-out;
 }
@@ -76,21 +91,6 @@ ul {
 .dropdown-nav ul li a:hover {
   color: #CCCCFF;
 }
-
-#typing {
-   font-size: 2rem;
-   display: inline-block;
-   border-right: 2px solid black; 
-   white-space: nowrap;
-   overflow: hidden;
-   animation: blink 1s step-start infinite; 
-}
-@keyframes blink {
-  50%{
-    border-color: transparent;
-  }
-}
-
 
 .socials-icons {
   display:flex;

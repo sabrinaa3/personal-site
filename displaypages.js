@@ -1,15 +1,25 @@
-document.querySelectorAll('.top-nav a').forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault(); // Prevent default link behavior
-
-    const targetId = this.getAttribute('data-section');
+document.querySelectorAll('nav a, .top-nav a').forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
 
     // Hide all sections
     document.querySelectorAll('section').forEach(section => {
       section.style.display = 'none';
     });
 
+    let targetId;
+
+    // Check for data-section attribute first, else use href
+    if (link.hasAttribute('data-section')) {
+      targetId = link.getAttribute('data-section');
+    } else {
+      targetId = link.getAttribute('href').replace('#', '');
+    }
+
     // Show the targeted section
-    document.getElementById(targetId).style.display = 'block';
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      targetSection.style.display = 'block';
+    }
   });
 });
