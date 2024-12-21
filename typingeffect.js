@@ -1,4 +1,4 @@
-<script>
+
     const nameToType = "Sabrina Allan";
     const typedText = document.getElementById("typing");
     const cursor = document.getElementById("cursor");
@@ -19,4 +19,3 @@
     window.onload = () => {
       typeEffect();
     };
-  </script>
