@@ -9,6 +9,7 @@ body {
 
 #typing {
    font-size: 2rem;
+   font-family: 'Roboto Mono', monospace;
    display: inline-block;
    border-right: 2px solid black; 
    white-space: nowrap;
@@ -59,11 +60,20 @@ ul {
 .hamburger-menu i {
   font-size: 24px;
   color: #CCCCFF;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s; 
+}
+
+.hamburger-menu i:hover {
+  background-color: #CCCCFF; 
+  color: white;
+  padding: 5px; 
+  border-radius: 50%; 
+  transform: scale(1.1); 
 }
 
 .dropdown-nav {
   display: none; /* Hidden by default */
-  position: absolute;
+  position: fixed;
   top: 40px;
   left: 0;
   background-color: white;
@@ -105,9 +115,11 @@ ul {
 }
 
 .socials-icons a i:hover {
-  font-size:18px;
-  color: #CCCCFF;
-  transform: scale(1.1); 
+  background-color: #CCCCFF;
+  color: white;
+  padding: 5px; 
+  border-radius: 50%;
+transform: scale(1.1);  
 }
 
 .resume-button {
@@ -127,6 +139,22 @@ button {
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+}
+
+.languages {
+  border-right: 2px solid #CCCCFF;
+  padding-right: 20px; 
+  text-align: left;
+}
+
+.other-tools h4, .languages h4 {
+  margin-top: 0;
 }
 
 .bottom-nav i a:hover {
