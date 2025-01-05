@@ -46,6 +46,7 @@ p {
    white-space: nowrap;
    overflow: hidden;
    animation: blink 1s step-start infinite; 
+   font-family: 'Courier New', Courier, monospace;
 }
 
 @keyframes blink {
