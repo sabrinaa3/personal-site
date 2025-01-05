@@ -287,6 +287,10 @@ button {
   margin-top: 0;
 }
 
+.contact-container p {
+  text-align: center;
+}
+
 button:hover {
   background-color: #CCCCFF;
   color: white;
