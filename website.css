@@ -8,16 +8,8 @@ body {
   line-height: 1.2;
 }
 
-img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 10px;
-  boxx-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-}
-
 .image-container {
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,10 +18,11 @@ img {
 .circle-image {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 10%;
   object-fit: cover;
   border: 3px solid #FF69B4;
   align-items: center;
+  margin-top: 0;
 }
 
 .first-letter::first-letter {
