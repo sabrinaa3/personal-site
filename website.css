@@ -23,7 +23,7 @@ body {
   border: 3px solid #FF69B4;
   align-items: center;
   margin-top: 0;
-  object-position: top 10%;
+  object-position: top 30%;
 }
 
 .first-letter::first-letter {
