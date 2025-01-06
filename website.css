@@ -8,6 +8,22 @@ body {
   line-height: 1.2;
 }
 
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  boxx-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .first-letter::first-letter {
   font-size: 25px; 
   font-weight: bold; 
