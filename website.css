@@ -17,13 +17,13 @@ body {
 
 .circle-image {
   width: 150px;
-  height: 150px;
+  height: 200px;
   border-radius: 10%;
   object-fit: cover;
   border: 3px solid #FF69B4;
   align-items: center;
   margin-top: 0;
-  object-position: top 2%;
+  object-position: top;
 }
 
 .first-letter::first-letter {
