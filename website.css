@@ -375,6 +375,11 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  p {
+    max-width: 90%;
+  }
+
+@media screen and (max-width: 600px) {
   .bottom-nav ul {
     flex-direction: column; 
     padding: 10px;
