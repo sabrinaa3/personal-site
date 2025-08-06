@@ -12,6 +12,23 @@
   height: 20px;
 }
 
+.experience-entry {
+  width: 1000px;
+  margin: auto;
+  background-color: #FFFAFA;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.experience-entry h3 {
+  margin-top: 0;
+  text-align: left;
+  font-size: 20px;
+  color: black;
+}
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -352,4 +369,5 @@ footer {
   .bottom-nav ul li {
     margin: 10px 0;
   }
+
 
