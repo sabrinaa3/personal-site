@@ -46,15 +46,6 @@ h2 {
   color: black;
 }
 
-h6 {
-  text-align: left; 
-  font-size: 19px;
-  margin: 20px auto 10px auto;
-  width: 1000px;
-  max-width: 90%;
-  color: black;
-}
-
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -395,6 +386,7 @@ footer {
   .bottom-nav ul li {
     margin: 10px 0;
   }
+
 
 
 
