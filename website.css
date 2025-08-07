@@ -46,7 +46,7 @@ h2 {
   color: black;
 }
 
-h1 {
+h6 {
   text-align: left; 
   font-size: 19px;
   margin: 20px auto 10px auto;
@@ -395,6 +395,7 @@ footer {
   .bottom-nav ul li {
     margin: 10px 0;
   }
+
 
 
 
