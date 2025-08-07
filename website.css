@@ -38,7 +38,7 @@ h3, h4 {
 }
 
 h2 {
-  text-align: left; 
+  text-align: center; 
   font-size: 20px;
   margin: 20px auto 10px auto;
   width: 1000px;
@@ -386,6 +386,7 @@ footer {
   .bottom-nav ul li {
     margin: 10px 0;
   }
+
 
 
 
