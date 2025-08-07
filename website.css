@@ -37,6 +37,24 @@ h3, h4 {
   color: black;
 }
 
+h2 {
+  text-align: left; 
+  font-size: 20px;
+  margin: 20px auto 10px auto;
+  width: 1000px;
+  max-width: 90%;
+  color: black;
+}
+
+h1 {
+  text-align: left; 
+  font-size: 19px;
+  margin: 20px auto 10px auto;
+  width: 1000px;
+  max-width: 90%;
+  color: black;
+}
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -377,6 +395,7 @@ footer {
   .bottom-nav ul li {
     margin: 10px 0;
   }
+
 
 
 
