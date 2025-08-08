@@ -257,6 +257,9 @@ button {
   gap: 20px;
   position: relative;
   align-items: stretch;
+  width: 1000px;
+  max-width: 90%;
+  margin: 20px auto;
 }
 
 .skills-container::before {
@@ -278,11 +281,17 @@ button {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 10px; 
-  text-align: left; 
+  text-align: center; 
+  padding-left: 0;
+}
+
+.languages li, .other-tools li {
+  margin: 6px 0;             
 }
 
 .other-tools h4, .languages h4 {
   margin-top: 0;
+  text-align: center;
 }
 
 .contact-container p {
@@ -368,6 +377,7 @@ footer {
   .bottom-nav ul li {
     margin: 10px 0;
   }
+
 
 
 
