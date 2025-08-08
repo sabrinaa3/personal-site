@@ -252,14 +252,14 @@ button {
 }
 
 .skills-container {
-  display: flex;
-  justify-content: center; 
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* always two columns */
   gap: 20px;
-  position: relative;
-  align-items: stretch;
+  align-items: start;
+  justify-content: center;
+  margin: 20px auto;
   width: 1000px;
   max-width: 90%;
-  margin: 20px auto;
 }
 
 .skills-container::before {
@@ -276,13 +276,11 @@ button {
 }
 
 .languages, .other-tools {
-  background-color: #FFFAFA; 
-  padding: 20px; 
+  background-color: #FFFAFA;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 10px; 
-  text-align: center; 
-  padding-left: 0;
+  text-align: center;
 }
 
 .languages li, .other-tools li {
@@ -291,7 +289,14 @@ button {
 
 .other-tools h4, .languages h4 {
   margin-top: 0;
-  text-align: center;
+}
+
+.languages ul, .other-tools ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block; /* allows horizontal centering */
+  text-align: left;      /* aligns list items neatly */
 }
 
 .contact-container p {
@@ -368,3 +373,4 @@ footer {
     max-width: 90%;
   }
 v
+
