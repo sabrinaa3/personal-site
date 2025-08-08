@@ -367,25 +367,4 @@ footer {
   p {
     max-width: 90%;
   }
-
-@media screen and (max-width: 600px) {
-  .bottom-nav ul {
-    flex-direction: column; 
-    padding: 10px;
-  }
-
-  .bottom-nav ul li {
-    margin: 10px 0;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
+v
