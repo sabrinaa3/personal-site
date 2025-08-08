@@ -22,10 +22,10 @@ h3, h4 {
 }
 
 h2 {
-width: 1000px;
+  width: 1000px;
   height: auto; 
   margin: auto;
-  font-weight: 400
+  font-weight: 300;
 }
 
 body {
@@ -368,6 +368,7 @@ footer {
   .bottom-nav ul li {
     margin: 10px 0;
   }
+
 
 
 
