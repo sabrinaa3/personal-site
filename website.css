@@ -251,7 +251,43 @@ button {
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-/* Skills section container */
+#skills {
+  margin-top: 2rem;
+}
+
+#skills h3 {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.skills-card {
+  background: #ffe6ef;
+  border: 1px solid #ffd0df;
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.skills-card h4 {
+  text-align: center;
+  margin: 0 0 0.75rem 0;
+  font-size: 1.15rem;
+}
+
+.skills-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;              
+}
+
 .skills-container {
   width: 1000px;
   max-width: 90%;
@@ -259,11 +295,10 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;        
   gap: 20px;
-  align-items: stretch;                  /* match heights */
-  position: relative;                    /* for the divider positioning */
+  align-items: stretch;             
+  position: relative;                  
 }
 
-/* Pink line only between boxes, perfectly centered */
 .skills-container::before {
   content: '';
   position: absolute;
@@ -271,11 +306,10 @@ button {
   bottom: 0;
   width: 2px;
   background-color: #FF69B4;
-  left: 50%;                             /* center between columns */
+  left: 50%;                            
   transform: translateX(-50%);
 }
 
-/* Each pink box */
 .languages,
 .other-tools {
   background-color: #FFFAFA;
@@ -283,17 +317,15 @@ button {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   text-align: center;
-  z-index: 1;                             /* keep content above divider */
+  z-index: 1;                         
 }
 
-/* Titles */
 .languages h4,
 .other-tools h4 {
   margin-top: 0;
   text-align: center;
 }
 
-/* Lists centered under titles */
 .languages ul,
 .other-tools ul {
   list-style: none;
@@ -305,6 +337,25 @@ button {
 .languages li,
 .other-tools li {
   margin: 6px 0;
+}
+
+.skills-card li {
+  display: inline-flex;         
+  align-items: center;
+  gap: 8px;
+  margin: 6px 10px;                
+  font-size: 0.98rem;
+}
+
+.skills-card li i {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .contact-container p {
@@ -381,5 +432,6 @@ footer {
     max-width: 90%;
   }
 v
+
 
 
