@@ -268,9 +268,9 @@ button {
 }
 
 .skills-card {
-  background: #ffe6ef;
+  background: #FFFAFA;
+  border-radius: 15px;
   border: 1px solid #ffd0df;
-  border-radius: 16px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
@@ -431,4 +431,5 @@ footer {
   p {
     max-width: 90%;
   }
+
 
