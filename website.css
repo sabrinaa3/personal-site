@@ -251,7 +251,7 @@ button {
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-#skills > h3 {
+#skills {
   text-align: left;
   width: 1000px;
   max-width: 90%;
@@ -395,3 +395,4 @@ footer {
   p {
     max-width: 90%;
   }
+
